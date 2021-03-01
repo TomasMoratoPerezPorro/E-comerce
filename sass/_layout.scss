@@ -40,9 +40,13 @@
   background-color: var(--color-white);
   display: flex;
   flex: 1;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: row;
+}
+
+.menu-top {
+  width: 100%;
 }
 
 .content {
