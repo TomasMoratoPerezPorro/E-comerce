@@ -54,7 +54,7 @@
 
 .content-top {
   width: 100%;
-  height: 35rem;
+  /* height: 35rem; */
   display: flex;
   flex-direction: row;
   background-color: lavender;
@@ -68,6 +68,7 @@
 .slider-main {
   background-color: lightgoldenrodyellow;
   flex: 0 0 44%;
+  position: relative;
 }
 
 .hotDeals {

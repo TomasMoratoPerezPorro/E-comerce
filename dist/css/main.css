@@ -95,7 +95,7 @@ body {
 
 .content-top {
   width: 100%;
-  height: 35rem;
+  /* height: 35rem; */
   display: flex;
   flex-direction: row;
   background-color: lavender;
@@ -109,6 +109,7 @@ body {
 .slider-main {
   background-color: lightgoldenrodyellow;
   flex: 0 0 44%;
+  position: relative;
 }
 
 .hotDeals {
@@ -368,4 +369,40 @@ body {
   /* & > *:hover {
       color: var(--color-grey-light-4);
     } */
+}
+
+.slider-main__item {
+  display: flex;
+  height: 100%;
+  position: relative;
+}
+
+.slider-main__text {
+  position: absolute;
+  top: 10%;
+  left: 4%;
+  margin-right: 53%;
+}
+
+.slider-main__text__heading {
+  margin-bottom: 6rem;
+}
+
+.slider-main__text__heading--main {
+  display: block;
+  font-size: 2.6rem;
+  font-weight: 400;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+}
+
+.slider-main__text__heading--sub {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.slider-main__photo {
+  width: 100%;
+  object-fit: cover;
 }
