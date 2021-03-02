@@ -274,6 +274,28 @@
 }
 
 ////////////////////////////////////////
+// BUTTON
+
+.button {
+  align-self: center;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0.5rem 0rem;
+
+  &__text {
+    color: var(--color-white);
+
+    text-transform: uppercase;
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
+}
+
+////////////////////////////////////////
 // SLIDER-MAIN
 
 .slider-main {

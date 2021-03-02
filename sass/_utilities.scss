@@ -79,6 +79,9 @@ $spaceamounts: (1, 2, 3, 4, 5);
   &-yellow {
     @include set-background($coloryellow);
   }
+  &-orange {
+    @include set-background($colororange);
+  }
   &-white {
     @include set-background($colorwhite);
   }
