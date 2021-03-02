@@ -389,7 +389,7 @@
     right: 5%;
   }
 
-  &.gallery-button-yellow {
+  /*  &.gallery-button-yellow {
     background-color: var(--color-yellow);
   }
 
@@ -403,7 +403,7 @@
 
   &.gallery-button-green {
     background-color: var(--color-green);
-  }
+  } */
 
   &__text {
     text-decoration: none;
@@ -411,7 +411,6 @@
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.4rem;
-    color: var(--color-white);
   }
 }
 
@@ -458,6 +457,11 @@
   &__heading-sub {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 400;
+
+    &.bottom-caption {
+      margin-top: 1rem;
+      display: inline-flex;
+    }
   }
 
   &__img-price-container {
@@ -465,7 +469,6 @@
     width: 100%;
     flex-direction: column;
     align-items: center;
-    padding: 3rem;
 
     &__photo {
       width: 100%;
