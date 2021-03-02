@@ -1,6 +1,6 @@
 .container {
   max-width: 120rem;
-  margin: 8rem auto;
+  margin: 0rem auto;
   background-color: var(--color-grey-light-1);
   box-shadow: var(--shadow-dark);
 
@@ -87,4 +87,25 @@
   display: flex;
   flex-direction: row;
   background-color: var(--color-black-1);
+}
+
+.spacer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--color-black-1);
+  padding: 0.9rem 1.5rem;
+  align-items: baseline;
+}
+
+.product-grid {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--color-white);
+
+  &__item {
+    width: 20%;
+    border: 1px solid var(--color-black-1);
+  }
 }
