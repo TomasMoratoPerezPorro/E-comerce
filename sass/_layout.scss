@@ -57,27 +57,34 @@
   /* height: 35rem; */
   display: flex;
   flex-direction: row;
-  background-color: lavender;
+  background-color: rgb(255, 255, 255);
 }
 
 .sidebar-menu {
-  background-color: lightblue;
-  flex: 0 0 21%;
+  /* background-color: lightblue; */
+  flex: 0 0 19.5%;
 }
 
 .slider-main {
-  background-color: lightgoldenrodyellow;
-  flex: 0 0 44%;
+  /* background-color: lightgoldenrodyellow; */
+  flex: 0 0 51.4%;
   position: relative;
 }
 
 .hotDeals {
-  background-color: lightsalmon;
-  flex: 0 0 35%;
+  /* background-color: lightsalmon; */
+  flex: 0 0 29.1%;
 }
 
 .sidebar {
   background-color: var(--color-grey-dark-1);
-
   flex: 0 0 18%;
+}
+
+.content-bottom {
+  width: 100%;
+  /* height: 35rem; */
+  display: flex;
+  flex-direction: row;
+  background-color: var(--color-black-1);
 }
