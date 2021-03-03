@@ -62,6 +62,16 @@
 
   background-color: var(--color-white);
 
+  @media only screen and (max-width: $bp-large) {
+    flex: 0 0 70%;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    flex: 0 0 90%;
+    order: 3;
+    margin-top: 1rem;
+  }
+
   &__input {
     font-family: 'Roboto Condensed', sans-serif;
     padding: 0.7rem 2rem;
@@ -146,6 +156,10 @@
   margin-right: 2rem;
   transition: all 0.2s;
 
+  @media only screen and (max-width: $bp-medium) {
+    order: 1;
+  }
+
   &__icon {
     fill: var(--color-black-1);
     height: 3.5rem;
@@ -220,6 +234,11 @@
   flex-direction: column;
   justify-content: space-evenly;
 
+  @media only screen and (max-width: $bp-large) {
+    flex-direction: row;
+    font-size: 60%;
+  }
+
   &__item {
     position: relative;
 
@@ -261,6 +280,11 @@
     font-size: 1.6rem;
     display: flex;
     align-items: center;
+
+    @media only screen and (max-width: $bp-large) {
+      padding: 0.8rem 1rem;
+      font-size: 1.3rem;
+    }
   }
 
   &__icon {
@@ -268,6 +292,10 @@
     height: 1.75rem;
     margin-right: 2rem;
     fill: currentColor;
+
+    @media only screen and (max-width: $bp-medium) {
+      display: none;
+    }
   }
 }
 
@@ -360,6 +388,10 @@
   width: 25%;
   border: 1px solid var(--color-black-1);
   position: relative;
+
+  @media only screen and (max-width: $bp-medium) {
+    width: 50%;
+  }
 
   &__photo {
     width: 100%;

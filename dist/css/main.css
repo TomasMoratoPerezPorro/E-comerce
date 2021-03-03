@@ -30,6 +30,9 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  /* @media only screen and (max-width: $bp-large) {
+    
+  } */
 }
 
 body {
@@ -47,6 +50,8 @@ body {
   margin: 0rem auto;
   background-color: var(--color-grey-light-1);
   box-shadow: var(--shadow-dark);
+  display: flex;
+  flex-direction: column;
   min-height: 50rem;
 }
 
@@ -58,6 +63,12 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .header {
+    height: auto;
+  }
 }
 
 .header-top {
@@ -86,12 +97,38 @@ body {
   flex-direction: row;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .header-bottom {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 40.16em) {
+  .header-bottom {
+    margin-top: 1rem;
+  }
+}
+
 .menu-top {
   width: 100%;
+  /* flex: 1; */
+}
+
+@media only screen and (max-width: 56.25em) {
+  .menu-top {
+    margin-top: 2rem;
+  }
 }
 
 .content {
   display: flex;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .content {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 
 .content-top {
@@ -102,9 +139,22 @@ body {
   background-color: white;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .content-top {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 .sidebar-menu {
   /* background-color: lightblue; */
   flex: 0 0 19.5%;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .sidebar-menu {
+    flex: 0 0 100%;
+  }
 }
 
 .slider-main {
@@ -113,9 +163,24 @@ body {
   position: relative;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .slider-main {
+    flex: 0 0 60%;
+    flex-wrap: wrap;
+  }
+}
+
 .hotDeals {
   /* background-color: lightsalmon; */
-  flex: 0 0 29.1%;
+  flex: 0 0 30%;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .hotDeals {
+    flex: 0 0 40%;
+    border: 1px solid var(--color-grey-light-4);
+    flex-wrap: wrap;
+  }
 }
 
 .sidebar {
@@ -129,6 +194,12 @@ body {
   display: flex;
   flex-direction: row;
   background-color: var(--color-black-1);
+}
+
+@media only screen and (max-width: 40.16em) {
+  .content-bottom {
+    flex-wrap: wrap;
+  }
 }
 
 .spacer {
@@ -250,12 +321,34 @@ body {
   padding-bottom: 0.5rem;
 }
 
+@media only screen and (max-width: 40.16em) {
+  .product-grid {
+    flex-wrap: wrap;
+  }
+}
+
 .product-grid__item {
   width: 20%;
 }
 
-.product-grid__item.right-separator {
+.product-grid__item.separator {
   border-right: 1px solid var(--color-black-1);
+}
+
+.product-grid__item.separator:last-of-type {
+  border-right: 0;
+}
+
+@media only screen and (max-width: 40.16em) {
+  .product-grid__item.separator {
+    border: 1px transparent var(--color-black-1);
+  }
+}
+
+@media only screen and (max-width: 40.16em) {
+  .product-grid__item {
+    width: 33%;
+  }
 }
 
 .topbar-nav {
@@ -311,6 +404,20 @@ body {
   justify-content: start;
   font-size: 1.5rem;
   background-color: var(--color-white);
+}
+
+@media only screen and (max-width: 56.25em) {
+  .search {
+    flex: 0 0 70%;
+  }
+}
+
+@media only screen and (max-width: 40.16em) {
+  .search {
+    flex: 0 0 90%;
+    order: 3;
+    margin-top: 1rem;
+  }
 }
 
 .search__input {
@@ -394,6 +501,12 @@ body {
   transition: all 0.2s;
 }
 
+@media only screen and (max-width: 40.16em) {
+  .shoping-logo {
+    order: 1;
+  }
+}
+
 .shoping-logo__icon {
   fill: var(--color-black-1);
   height: 3.5rem;
@@ -461,6 +574,13 @@ body {
   justify-content: space-evenly;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .side-nav {
+    flex-direction: row;
+    font-size: 60%;
+  }
+}
+
 .side-nav__item {
   position: relative;
 }
@@ -503,11 +623,24 @@ body {
   align-items: center;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .side-nav__link:link, .side-nav__link:visited {
+    padding: 0.8rem 1rem;
+    font-size: 1.3rem;
+  }
+}
+
 .side-nav__icon {
   width: 1.75rem;
   height: 1.75rem;
   margin-right: 2rem;
   fill: currentColor;
+}
+
+@media only screen and (max-width: 40.16em) {
+  .side-nav__icon {
+    display: none;
+  }
 }
 
 .button {
@@ -588,6 +721,12 @@ body {
   width: 25%;
   border: 1px solid var(--color-black-1);
   position: relative;
+}
+
+@media only screen and (max-width: 40.16em) {
+  .gallery-item {
+    width: 50%;
+  }
 }
 
 .gallery-item__photo {

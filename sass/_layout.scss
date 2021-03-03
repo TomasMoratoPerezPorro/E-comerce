@@ -3,7 +3,8 @@
   margin: 0rem auto;
   background-color: var(--color-grey-light-1);
   box-shadow: var(--shadow-dark);
-
+  display: flex;
+  flex-direction: column;
   min-height: 50rem;
 }
 
@@ -16,6 +17,10 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  @media only screen and (max-width: $bp-large) {
+    height: auto;
+  }
 }
 
 .header-top {
@@ -42,14 +47,31 @@
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
+
+  @media only screen and (max-width: $bp-large) {
+    flex-wrap: wrap;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-top: 1rem;
+  }
 }
 
 .menu-top {
   width: 100%;
+  /* flex: 1; */
+  @media only screen and (max-width: $bp-large) {
+    margin-top: 2rem;
+  }
 }
 
 .content {
   display: flex;
+
+  @media only screen and (max-width: $bp-large) {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 
 .content-top {
@@ -58,22 +80,40 @@
   display: flex;
   flex-direction: row;
   background-color: rgb(255, 255, 255);
+  @media only screen and (max-width: $bp-large) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .sidebar-menu {
   /* background-color: lightblue; */
   flex: 0 0 19.5%;
+  @media only screen and (max-width: $bp-large) {
+    flex: 0 0 100%;
+  }
 }
 
 .slider-main {
   /* background-color: lightgoldenrodyellow; */
   flex: 0 0 51.4%;
   position: relative;
+
+  @media only screen and (max-width: $bp-large) {
+    flex: 0 0 60%;
+    flex-wrap: wrap;
+  }
 }
 
 .hotDeals {
   /* background-color: lightsalmon; */
-  flex: 0 0 29.1%;
+  flex: 0 0 30%;
+
+  @media only screen and (max-width: $bp-large) {
+    flex: 0 0 40%;
+    border: 1px solid var(--color-grey-light-4);
+    flex-wrap: wrap;
+  }
 }
 
 .sidebar {
@@ -87,6 +127,10 @@
   display: flex;
   flex-direction: row;
   background-color: var(--color-black-1);
+
+  @media only screen and (max-width: $bp-medium) {
+    flex-wrap: wrap;
+  }
 }
 
 .spacer {
@@ -203,10 +247,27 @@
   padding-top: 2rem;
   padding-bottom: 0.5rem;
 
+  @media only screen and (max-width: $bp-medium) {
+    flex-wrap: wrap;
+  }
+
   &__item {
-    &.right-separator {
+    &.separator {
       border-right: 1px solid var(--color-black-1);
+
+      &:last-of-type {
+        border-right: 0;
+      }
+
+      @media only screen and (max-width: $bp-medium) {
+        border: 1px transparent var(--color-black-1);
+      }
     }
+
     width: 20%;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 33%;
+    }
   }
 }
